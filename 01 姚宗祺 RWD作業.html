@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *,
+      h4 {
+        text-align: center;
+      }
+      p {
+        text-align: left;
+      }
+      img {
+        width: 200px;
+      }
+      @media (max-width: 1300px) {
+        ::after {
+          display: none;
+        }
+      }
+
+      @media (min-width: 576px) {
+        body {
+          width: 100vw;
+          overflow: hidden;
+        }
+        p,
+        hr {
+          display: none;
+        }
+
+        .container {
+          display: flex;
+          width: 80%;
+          margin: auto;
+        }
+        .left,
+        .right {
+          width: 50%;
+        }
+        .wda {
+          position: absolute;
+          top: 30vh;
+          left: 42vw;
+        }
+        .html {
+          position: relative;
+          left: -250px;
+        }
+        .js {
+          position: relative;
+          top: -250px;
+          left: -300px;
+        }
+        .jq {
+          position: relative;
+          top: -340px;
+          left: 5px;
+        }
+        .vue {
+          position: relative;
+          left: 260px;
+        }
+        .css {
+          position: relative;
+          right: -100px;
+          top: -250px;
+        }
+        .css::after,
+        .html::after,
+        .js::after,
+        .jq::after,
+        .bs::after,
+        .vue::after,
+        .git::after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          background-color: gray;
+        }
+        .css::after {
+          width: 160px;
+          transform: rotateZ(35deg);
+          bottom: 100px;
+          right: 150px;
+        }
+        .html::after {
+          width: 400px;
+          transform: rotateZ(15deg);
+          right: -60px;
+          bottom: 40px;
+          z-index: 10;
+        }
+        .js::after {
+          width: 300px;
+          transform: rotateZ(-10deg);
+          bottom: 120px;
+          right: 10px;
+          z-index: 10;
+        }
+        .jq::after {
+          width: 139px;
+          transform: rotateZ(326deg);
+          bottom: 237px;
+          right: 168px;
+        }
+        .bs::after {
+          width: 200px;
+          transform: rotateZ(338deg);
+          top: 200px;
+          right: 614px;
+        }
+        .vue::after {
+          width: 400px;
+          transform: rotateZ(9deg);
+          bottom: 154px;
+          right: 480px;
+        }
+        .git::after {
+          width: 150px;
+          transform: rotateZ(20deg);
+          bottom: 350px;
+          right: 644px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wda">
+        <img src="./wda.png" alt="" />
+        <h1>泰山職訓局</h1>
+        <h2>從零開始的網頁設計課程</h2>
+        <h4>
+          政府自辦訓練課程　待業民眾完全免費<br />轉職網頁開發人員　掌握就業必備職能<br />
+          由淺入深學習技術　強化職場的競爭力
+        </h4>
+      </div>
+      <hr />
+      <div class="left">
+        <div class="html">
+          <img src="./html.jpg" alt="" />
+          <h1>HTML</h1>
+          <p>
+            超文本標記語言（英語：HyperText Markup
+            Language，簡稱：HTML）是一種用於建立網頁的標準標記語言。 HTML
+            是一種基礎技術，常與 CSS、JavaScript
+            一起被眾多網站用於設計賞心悅目的網頁、網頁應用程式以及行
+            動應用程式的使用者介面。網頁瀏覽器可以讀取 HTML
+            檔案，並將其彩現成視覺化網頁。HTML 描述了一個網站
+            的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。
+          </p>
+        </div>
+        <hr />
+        <div class="css">
+          <img src="./css.jpg" alt="" />
+          <h1>CSS</h1>
+          <p>
+            層疊樣式表（英語：Cascading Style
+            Sheets，簡寫CSS），又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣
+            式表，一種用來為結構化文件（如 HTML 文件或 XML
+            應用）添加樣式（字型、間距和顏色等）的電腦語言，由 W3C
+            定義和維護。目前最新版本是 CSS2.1，為 W3C 的推薦標準。CSS3
+            現在已被大部分現代瀏覽器支援，而下 一版的 CSS4 仍在開發中。
+          </p>
+        </div>
+        <hr />
+        <div class="js">
+          <img src="./js.jpg" alt="" />
+          <h1>Javascript</h1>
+          <p>
+            JavaScript，通常縮寫為 JS，是一種進階直譯語言的程式語言。JavaScript
+            是一門基於原型、函式先行的語言，是
+            一門多範式的語言，它支援物件導向編程，指令式程式設計，以及函式語言程式設計。
+          </p>
+        </div>
+        <hr />
+        <div class="jq">
+          <img src="./jq.jpg" alt="" />
+          <h1>jQuery</h1>
+          <p>
+            jQuery 是一套跨瀏覽器的 JavaScript 函式庫，簡化 HTML 與 JavaScript
+            之間的操作。全球前 10,000 個存取最高的 網站中，有 65%
+            使用了jQuery，是目前最受歡迎的 JavaScript 函式庫。
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="right">
+        <div class="bs">
+          <img src="./bs.jpg" alt="" />
+          <h1>Bootstrap</h1>
+          <p>
+            Bootstrap
+            是一組用於網站和網路應用程式開發的開源前端（所謂「前端」，指的是展現給終端使用者的介面。與
+            之對應的「後端」是在伺服器上面執行的程式碼）框架，包括
+            HTML、CSS及JavaScript 的框架，提供字體排印、
+            表單、按鈕、導航及其他各種元件及 Javascript
+            擴充套件，旨在使動態網頁和 Web 應用的開發更加容易。
+          </p>
+        </div>
+        <hr />
+        <div class="vue">
+          <img src="./vue.jpg" alt="" />
+          <h1>Vue</h1>
+          <p>
+            Vue.js是一款JavaScript前端框架，旨在更好地組織與簡化Web開發。
+            Vue所關注的核心是MVC模式中的視圖層，同時，它也能方便地取得資料更新，
+            並通過組件內部特定的方法實現視圖與模型的互動。
+          </p>
+        </div>
+        <hr />
+        <div class="git">
+          <img src="./git.jpg" alt="" />
+          <h1>Git</h1>
+          <p>
+            git是一個分散式版本控制軟體，最初目的是為了更好地管理Linux核心開發而設計。
+            git最初只是作為一個可以被其他前端包裝的後端而開發的，但後來git核心已經成熟到可以獨立地用作版本控制。
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
